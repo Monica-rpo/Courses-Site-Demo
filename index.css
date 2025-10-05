@@ -150,6 +150,8 @@ a article img {
 }
 
 a article header {
+  width: 90%;
+  margin: 0 auto;
   font-family: "Alan Sans", sans-serif;
 }
 
@@ -157,14 +159,13 @@ h2 {
   font-family: inherit;
   font-weight: 800;
   color: #141414;
-  padding-left: 0.5rem;
 }
 
 .description {
   font-family: inherit;
   letter-spacing: 0.03em;
   color: #505050;
-  padding: 0.5rem;
+  padding-top: 0.5rem;
   line-height: 1.5rem;
 }
 
@@ -426,7 +427,7 @@ Tablet view
   }
 
   a article img {
-    width: 97%;
+    /* width: 97%; */
     height: 12.5rem;
     object-fit: cover;
   }
