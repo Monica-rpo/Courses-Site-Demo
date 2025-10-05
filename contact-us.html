@@ -1,0 +1,75 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Alan+Sans:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.png" />
+    <title>Contact us</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="logo-container">
+        <img src="images/logo.png" alt="site logo" />
+        <p>Learn it now or never !!</p>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About us</a></li>
+          <li><a href="contact-us.html">Contact us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-page">
+        <div class="contact">
+          <h2 id="form-lable">Contact Form</h2>
+          <form id="myForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+          <div id="successMessage">
+            <p>Thank you! Your message has been sent.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h5>Online Learning Platform</h5>
+      <h6>Copyright ©2025</h6>
+    </footer>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

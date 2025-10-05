@@ -1,0 +1,450 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Let main take available space */
+main {
+  flex: 1;
+}
+
+/*
+****************
+****************
+****************
+Header Styling
+****************
+****************
+****************
+*/
+
+.page-header,
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.page-header {
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 1.875rem 1.5rem;
+  /* 1.875rem */
+  color: #0e0e0e;
+}
+
+.logo-container {
+  gap: 0.5em;
+}
+.logo-container p {
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #090909;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  border-bottom: 1px solid #090909;
+  background-color: #faedcd;
+}
+
+/*
+****************
+****************
+****************
+hero section Styling
+****************
+****************
+**************** 
+*/
+.hero-section {
+  height: 60vh;
+  background-image: url("images/hero-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  color: white;
+  margin-bottom: 5rem;
+}
+.hero-text {
+  margin: 1.25rem;
+  text-shadow: #0e0e0e 2px 2px;
+  overflow-x: hidden;
+}
+.hero-section h1 {
+  padding-bottom: 0.5rem;
+}
+
+/*
+****************
+****************
+****************
+Courses list styling
+****************
+****************
+****************
+*/
+
+.container {
+  width: 90%;
+  /* max-width: 900px; */
+  margin: 0 auto 2rem auto;
+}
+
+.available-courses {
+  display: grid;
+  row-gap: 2rem;
+  grid-template-columns: 1fr;
+}
+
+.available-courses a {
+  text-decoration: none;
+}
+
+.available-courses a:hover,
+.available-courses a:focus {
+  background-color: #faedcd;
+}
+
+.available-courses a:visited {
+  color: inherit; /* use normal text color */
+  background-color: none;
+  text-decoration: none; /* no underline */
+}
+
+a article img {
+  width: 90%;
+  height: 25rem;
+  display: block;
+  margin: 0 auto;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+a article header {
+  font-family: "Alan Sans", sans-serif;
+}
+
+h2 {
+  font-family: inherit;
+  font-weight: 800;
+  color: #141414;
+}
+
+.description {
+  font-family: inherit;
+  letter-spacing: 0.03em;
+  color: #505050;
+  padding: 0.5rem;
+  line-height: 1.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/*
+****************
+****************
+****************
+view more Button styling
+****************
+****************
+****************
+*/
+
+.view-more {
+  font-family: "Alan Sans", sans-serif;
+  color: #000000;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  border-bottom: 1px solid #000000;
+  cursor: pointer;
+  background-color: white;
+}
+
+/*
+****************
+****************
+****************
+footer section styling
+****************
+****************
+****************
+*/
+
+footer {
+  font-family: "Alan Sans", sans-serif;
+  background-color: #202020;
+  height: 6.25rem;
+  padding: 1.7rem;
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h5 {
+  font-weight: 400;
+  color: #ececec;
+}
+
+footer h6 {
+  color: #d7d7dd;
+}
+
+/*
+****************
+****************
+****************
+course-details page styling
+****************
+****************
+****************
+*/
+
+.course-hero-section {
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.course-hero-section-container {
+  background: #fff;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  width: 80%;
+  height: 80%;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+  outline: none;
+  display: flex;
+  height: 80%;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+  overflow-x: hidden;
+}
+
+.course-details {
+  display: flex;
+  height: 80%;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+  overflow-x: hidden;
+}
+
+.course-details h1,
+.course-details p {
+  font-family: "Alan Sans", sans-serif;
+}
+
+.enroll-btn {
+  position: relative;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 500;
+  display: block;
+  padding: 0.7rem;
+  letter-spacing: 0.03rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid #e3a587;
+  cursor: pointer;
+  background-color: #de6953;
+}
+
+.tip-text {
+  visibility: hidden;
+  width: max-content;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0.4rem 0.7rem;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.enroll-btn:hover .tip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.recent-courses h3 {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+/*
+****************
+****************
+****************
+About-Us page styling
+****************
+****************
+****************
+*/
+.about-page {
+  max-width: 800px;
+  margin: 5rem auto;
+  padding: 0 1rem;
+}
+
+.about-page section {
+  margin-bottom: 2rem;
+}
+
+.about-page h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #5a2bc8;
+}
+
+.about-page p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/*
+****************
+****************
+****************
+Contact-Us page styling
+****************
+****************
+****************
+*/
+.contact-page {
+  max-width: 600px;
+  margin: 5rem auto;
+  padding: 0 1rem;
+}
+
+.contact-page h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #5a2bc8;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact label {
+  margin: 0.5rem 0 0.25rem;
+  font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+}
+
+.contact button {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background: #7d3cff;
+  color: #fff;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact button:hover {
+  background: #5a2bc8;
+}
+
+#successMessage {
+  display: none;
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #e0ffe0;
+  border: 1px solid #00aa00;
+  color: #006600;
+  border-radius: 5px;
+}
+/*
+****************
+Tablet view
+****************
+*/
+
+@media (min-width: 768px) {
+  .available-courses {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+  }
+
+  a article img {
+    width: 97%;
+    height: 12.5rem;
+    object-fit: cover;
+  }
+
+  .hidden {
+    display: block;
+  }
+  #toggle {
+    display: none;
+  }
+  .about-page,
+  .contact-page {
+    margin: 5rem;
+    font-size: 0.95rem;
+  }
+}
+
+/*
+****************
+Desktop view
+****************
+*/
+
+@media (min-width: 1024px) {
+  .available-courses {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  a article img {
+    height: 18.75rem;
+  }
+}
