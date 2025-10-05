@@ -294,6 +294,7 @@ course-details page styling
   text-align: center;
   padding: 0.4rem 0.7rem;
   border-radius: 5px;
+  font-size: 0.6rem;
   position: absolute;
 }
 
@@ -426,6 +427,10 @@ Tablet view
     width: 97%;
     height: 12.5rem;
     object-fit: cover;
+  }
+
+  .tip-text {
+    font-size: 0.8rem;
   }
 
   .hidden {
