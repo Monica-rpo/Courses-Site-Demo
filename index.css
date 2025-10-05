@@ -81,7 +81,8 @@ hero section Styling
 */
 .hero-section {
   height: 60vh;
-  background-image: url("images/hero-image.jpg");
+  background-image: linear-gradient(rgba(139, 69, 19, 0.15), rgba(0, 0, 0, 0.5)),
+    url(images/hero-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -94,7 +95,7 @@ hero section Styling
 }
 .hero-text {
   margin: 1.25rem;
-  text-shadow: #0e0e0e 2px 2px;
+  /* text-shadow: #0e0e0e 2px 2px; */
   overflow-x: hidden;
 }
 .hero-section h1 {
@@ -409,7 +410,7 @@ Tablet view
 ****************
 */
 
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .logo-container p {
     font-size: 1.5rem;
   }
